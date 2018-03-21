@@ -1,0 +1,17 @@
+<p>
+  filters works!
+</p>
+Postal Code <input type="text" [value]="postalCode">
+Sight/Scheme Name <input type="text" [value]="ssn">
+
+<select>
+  <option *ngFor="let option of specOptions" value="option.value">{{option.value}}</option>
+</select>
+<select>
+  <option *ngFor="let floor of floors" value="floor">{{floor}}</option>
+</select>
+<div>
+  Has Balcony <input type="checkbox" [checked]="balcony" (change)="balcony = !balcony"/>
+</div>
+
+
